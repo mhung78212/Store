@@ -1,0 +1,670 @@
+/* Page single */
+#page.show-dpt .ri-menu-3-line,
+.dpt-trigger .ri-close-line {
+    display: none;
+    transition: all 0.3s linear;
+}
+#page:not(.home-page) .dpt-cat {
+    position: relative;
+}
+#page:not(.home-page) .dpt-menu {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+#page.show-dpt .dpt-trigger .ri-close-line {
+    display: block;
+}
+#page.show-dpt .dpt-menu {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+/* Page single */
+
+/* Product one */
+.products.one .item {
+    flex-direction: column;
+}
+.products.one .price .discount {
+    font-size: 1em;
+    font-weight: var(--fw7);
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    z-index: 2;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: var(--percent50);
+}
+.products.one :where(.big-image, .small-image) {
+    overflow: hidden;
+}
+.products.one .big-image {
+    position: relative;
+    margin-bottom: 1em;
+}
+.products.one :where(.big-image, .small-image) img {
+    object-fit: cover;
+    width: var(--percent100);
+    height: var(--percent100);
+    display: block;
+}
+.products.one .thumbnail-show {
+    width: 130px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 2em 2em 0;
+}
+.products.one .small-image img {
+    cursor: pointer;
+}
+.products :is(.swiper-button-next, .swiper-button-prev) {
+    outline: 0;
+    color: var(--secondary-dark-color);
+    transition: var(--trans-bg), transform 0.3s;
+}
+.products .big-image:hover .swiper-button-next {
+    transform: translateX(10px);
+}
+.products .big-image:hover .swiper-button-prev {
+    transform: translateX(-10px);
+}
+.products :is(.swiper-button-next, .swiper-button-prev)::after {
+    font-size: 1.5em;
+}
+.products .big-image:hover :is(.swiper-button-next, .swiper-button-prev) {
+    background-color: var(--light-bg-color);
+}
+/* Product description */
+.products.one .add-review {
+    color: var(--dark-color);
+}
+.products.one .stock-sku .available {
+    padding: 0.5em;
+    margin-right: 1em;
+    color: var(--secondary-color);
+    background-color: var(--light-bg-color);
+    border-radius: 5px;
+    font-size: var(--font-small);
+    font-weight: var(--fw8);
+}
+.products.one .price {
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.products.one .price .current {
+    font-size: 2.5em;
+}
+.products .variant form {
+    display: flex;
+    margin-top: 0.5em;
+}
+.products .variant form p {
+    position: relative;
+    margin: 0 0.5em 0.5em;
+}
+
+.products :where(.variant, .actions) .circle {
+    display: block;
+    position: static;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+:where(.products .variant, .filter-block:not(.pricing)) input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.products .colors .variant label::before {
+    opacity: 1;
+}
+.products .variant label[for="cogrey"]::before {
+    background-color: #576574;
+}
+.products .variant label[for="coblue"]::before {
+    background-color: #45a0ff;
+}
+.products .variant label[for="cogreen"]::before {
+    background-color: #1dd1a1;
+}
+.single-product .variant form p input:checked + label {
+    background-color: transparent;
+    border: 2px solid var(--dark-color);
+}
+.products .sizes .variant label::before {
+    background-color: var(--white-color);
+}
+.products .sizes .variant label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--percent100);
+    height: var(--percent100);
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products .actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.products .actions .qty-control {
+    width: fit-content;
+    border: var(--border);
+    padding: 0.5em;
+    margin: 0 2em 2em 0;
+    border-radius: 5px;
+}
+.products .actions .qty-control button::before {
+    background-color: transparent;
+}
+.products .actions :where(button, input) {
+    outline: none;
+    border: none;
+    font-size: 1.25em;
+}
+.products .actions input {
+    width: 50px;
+    text-align: center;
+}
+.products .actions .button-cart {
+    flex: 1;
+    min-width: 200px;
+}
+.products .actions .button-cart button {
+    width: var(--percent100);
+}
+.products .wish-share a {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw7);
+    margin: 1em 2em 1em 0;
+    transition: var(--trans-color);
+}
+.products .collapse .has-child > a {
+    position: relative;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+    padding: 1em 1.25em;
+    border-top: var(--border);
+    gap: 1em;
+}
+.products .collapse .has-child > a::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+}
+.products .collapse .content {
+    margin: 0 0 1.5em 2em;
+    font-size: var(--font-small);
+}
+.products .collapse .has-child .content li span:first-child {
+    min-width: 100px;
+    display: inline-block;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+    margin: 1em;
+}
+.products .collapse table {
+    line-height: 3em;
+}
+.products .collapse table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid var(--dark-color);
+}
+.products .collapse table :where(th, td) {
+    border-bottom: var(--border);
+    padding: 0 2.5em;
+}
+.products .collapse .content {
+    transition: all 1s linear;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+.products .collapse .expand .content {
+    opacity: 1;
+    height: auto;
+}
+.products .collapse .expand > a::before {
+    content: "-";
+}
+
+.products .reviews h4 {
+    font-size: 2rem;
+    color: var(--light-text-color);
+    padding-top: 1em;
+    margin: 1em 0 0.5em;
+    border-top: var(--border);
+}
+.products .review-block {
+    color: initial;
+}
+.products .review-block-head > a {
+    display: block;
+    font-size: 1.25em;
+    width: var(--percent100);
+    margin-top: 1em;
+    text-align: center;
+}
+.products .review-block-head .rate-sum {
+    position: relative;
+    font-weight: var(--fw7);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+.products .review-block-head .rate-sum::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: var(--dark-color);
+    top: 10px;
+    right: -10px;
+    transform: rotate(22deg);
+}
+.products .review-block-body .item {
+    margin-top: 3.5em;
+    padding-bottom: 2.5em;
+    gap: 1em;
+}
+.products .review-block-body :where(.person, .review-title) {
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+.products .review-block-body :where(.review-title, .view-all) {
+    font-size: 1.24em;
+    justify-content: end;
+}
+.products .review-block-body .item:not(:last-child) {
+    border-bottom: var(--border);
+}
+/* Review Form */
+.review-form .rating {
+    flex-wrap: wrap;
+}
+.review-form p {
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+.review-form .rate-this input {
+    display: none;
+}
+.review-form .rate-this label {
+    float: right;
+    font-size: 2em;
+    color: var(--secondary-dark-color);
+}
+.rate-this > input:checked ~ label,
+.rate-this:not(:checked) > label:hover,
+.rate-this:not(:checked) > label:hover ~ label {
+    color: #f1c40e;
+}
+.rate-this > input:checked + label:hover,
+.rate-this > input:checked ~ label:hover,
+.rate-this > label:hover ~ input:checked ~ label,
+.rate-this > input:checked ~ label:hover ~ label {
+    color: #ffed85;
+}
+
+.review-form form {
+    margin-top: 2.5em;
+}
+.review-form form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.review-form form p :where(input, textarea) {
+    line-height: 1;
+    border: var(--border);
+    outline: 0;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+.review-form label {
+    text-transform: uppercase;
+    font-weight: var(--fw5);
+}
+
+/* Category Page Block */
+.single-category .holder {
+    display: flex;
+    flex-direction: column;
+}
+.single-category .sidebar,
+.single-category .section {
+    flex: 1 0 100%;
+}
+.single-category .section {
+    padding: 0 1em;
+}
+/* Category filter */
+.filter-block {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+.filter-block:not(:last-child) {
+    border-bottom: var(--border);
+}
+.filter-block h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+.filter-block li {
+    display: flex;
+    font-size: 0.9em;
+    position: relative;
+    line-height: 2;
+}
+.filter-block label .checked {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    border: 2px solid var(--secondary-dark-color);
+    vertical-align: text-top;
+    margin: 0 7px 0 0;
+    cursor: pointer;
+}
+.filter-block label .checked::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-dark-color);
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+}
+.filter-block .count {
+    margin-left: auto;
+}
+.filter-block input:checked + label .checked::before {
+    opacity: 1;
+}
+.bycolor {
+    gap: 1em;
+}
+.bycolor label[for="cored"]::before {
+    background-color: var(--primary-color);
+}
+.bycolor label[for="colight"]::before {
+    background-color: var(--border-color);
+}
+.bycolor input:checked + label {
+    background-color: transparent;
+    border: 2px solid var(--dark-color);
+}
+
+.byprice {
+    width: var(--percent100);
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    border: var(--border);
+    position: relative;
+}
+.range-track input {
+    -webkit-appearance: none;
+    position: absolute;
+    width: var(--percent100);
+    height: 5px;
+    margin: 0;
+    background-color: transparent;
+    pointer-events: none;
+    transform: translateY(1px);
+}
+.range-track input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid var(--primary-color);
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    pointer-events: auto;
+}
+.byprice .progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    height: var(--percent100);
+    border-radius: 5px;
+}
+.pricing .price-range {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-text-color);
+    margin-top: 0.5em;
+}
+.filter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: rgb(0 0 0 /30%) 0 10px 50px;
+    background-color: var(--white-color);
+    overflow-y: scroll;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+.filter.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* Category Page Content */
+.cat-description p {
+    font-weight: var(--fw3);
+    font-size: 0.9em;
+}
+.cat-navigation {
+    justify-content: flex-end;
+    font-size: 0.85em;
+    margin: 2em 0;
+    gap: 1em;
+}
+.cat-navigation > div {
+    position: relative;
+}
+.cat-navigation .item-filter a {
+    text-transform: uppercase;
+    align-items: center;
+}
+.cat-navigation .label,
+.cat-navigation ul li {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    transition: var(--trans-color);
+}
+:where(.item-sortir, .item-option) .label,
+.cat-navigation ul {
+    color: var(--light-text-color);
+    background-color: var(--light-bg-color);
+    cursor: pointer;
+}
+.cat-navigation ul {
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    min-width: var(--percent100);
+    z-index: 10;
+    display: none;
+}
+
+.cat-navigation :where(label, ul li):hover {
+    color: var(--dark-color);
+}
+:where(.item-sortir, .item-option):hover ul {
+    display: block;
+}
+.cat-navigation .item-filter {
+    margin-right: auto;
+}
+.page-title,
+.loadmore {
+    margin-bottom: 3em;
+}
+/* Page Cart */
+.products.cart form {
+    width: var(--percent100);
+}
+.products.cart table thead th {
+    vertical-align: middle;
+    background-color: var(--light-bg-color);
+    text-align: left;
+}
+.products.cart table :where(th, td) {
+    padding: 2em 1em;
+    text-align: center;
+}
+.products.cart .products.cart table :where(th, td):first-child {
+    text-align: left;
+    padding-left: 2em;
+}
+.products.cart table td :where(.content, .qty-control, p) {
+    margin: 0;
+    padding: 0;
+}
+.products.cart .qty-control :where(button, input) {
+    width: 32px;
+    height: 32px;
+    padding: 0.25em;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+.products.cart .qty-control button {
+    cursor: pointer;
+}
+.products.cart table tbody tr {
+    border-bottom: var(--border);
+}
+.cart-summary {
+    width: var(--percent100);
+    margin: 2.5em 0 4em;
+}
+.cart-summary .item {
+    background-color: var(--light-bg-color);
+}
+.cart-summary .coupon {
+    position: relative;
+}
+.cart-summary .coupon input {
+    font-size: 1.1em;
+    outline: 0;
+    width: var(--percent100);
+    padding: 0 1.5em;
+    line-height: 50px;
+    background-color: var(--white-color);
+    border: 3px solid var(--dark-color);
+}
+.cart-summary .coupon button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 56px;
+    background-color: var(--dark-color);
+    padding: 0 2.5em;
+    outline: none;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.cart-summary .shipping-rate {
+    padding: 0 2em 0 1em;
+}
+.cart-summary .shipping-rate .has-child > a {
+    font-size: 1em;
+    margin: 2em 0;
+    border: 0;
+}
+.cart-summary .has-child form > label {
+    font-weight: var(--fw7);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+.cart-summary .content form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.styled :where(input, select, textarea) {
+    padding: 0.75em;
+    outline: 0;
+    background-color: var(--white-color);
+    border-bottom: 3px solid var(--border-color);
+}
+.cart-summary .variant form label {
+    position: relative;
+    border: 0;
+    background-color: var(--white-color);
+    transform: scale(0.5) translateX(25px);
+}
+.cart-summary .variant p span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    line-height: 3;
+}
+.cart-summary .variant input:checked + label::before {
+    opacity: 1;
+}
+.products.cart .cart-total table tr > * {
+    padding: 0;
+}
+.products.cart .cart-total table td {
+    text-align: right;
+}
+.cart-summary .cart-total {
+    padding: 2em;
+    background-color: var(--border-color);
+    line-height: 2em;
+}
+.cart-summary .cart-total table {
+    width: var(--percent100);
+}
+.cart-summary .cart-total table tr {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-summary .grand-total td {
+    font-size: 2em;
+    font-family: "Poppins";
+    font-weight: var(--fw8);
+    line-height: 2em;
+}
+.cart-summary .grand-total th {
+    display: flex;
+    align-items: center;
+}
+.cart-summary .cart-total > a {
+    width: var(--percent100);
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.25em;
+}

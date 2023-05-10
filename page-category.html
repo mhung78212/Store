@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecommerce Website</title>
+        <!-- Icon CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <!-- Libary CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./css/global.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/page.css">
+        <link rel="stylesheet" href="./css/reponsive.css"/>
+    </head>
+    <body>
+        <div id="page" class="site page-category">
+            <!-- Header mobi -->
+            <aside class="desktop-hide site-off">
+                <div class="off-canvas">
+                    <div class="canvas-head d-flex">
+                        <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                        <a href="#" class="t-close c-flex"><i class="ri-close-line"></i></a>
+                    </div>
+                    <div class="departments"></div>
+                    <nav></nav>
+                </div>
+            </aside>
+            <!-- Header -->
+            <header>
+                <div class="header-top mobile-hide">
+                    <div class="container">
+                        <div class="wrapper d-flex">
+                            <div class="left">
+                                <ul class="d-flex main-links">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Featured Products</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="d-flex main-links">
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Order Tracking</a></li>
+                                    <li id="money-select">
+                                        <a href="#"> 
+                                            <span id="money-label">USD</span>
+                                            <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span>
+                                        </a>
+                                        <ul id="money-list">
+                                            <li class="action"><a href="#">USD</a></li>
+                                            <li><a href="#">EURO</a></li>
+                                            <li><a href="#">GBP</a></li>
+                                            <li><a href="#">JPY</a></li>
+                                            <li><a href="#">VND</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="language-select">
+                                        <a href="#"> 
+                                            <span id="language-label">English</span>
+                                            <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span>
+                                        </a>
+                                        <ul id="language-list">
+                                            <li class="action"><a href="#">English</a></li>
+                                            <li><a href="#">French</a></li>
+                                            <li><a href="#">Spanish</a></li>
+                                            <li><a href="#">Japanese</a></li>
+                                            <li><a href="#">Vietnamese</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Top -->
+                <div class="header-nav">
+                    <div class="container">
+                        <div class="wrapper d-flex">
+                            <a href="#" class="trigger desktop-hide"><i class="ri-menu-2-line"></i></a>
+                            <div class="left d-flex">
+                                <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                                <nav class="mobile-hide">
+                                    <ul class="d-flex second-links">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                        <li class="has-child"><a href="#">Woman <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                            <div class="mega">
+                                                <div class="container">
+                                                    <div class="wrapper">
+                                                        <div class="flex-col">
+                                                            <div class="row">
+                                                                <h4>Women's Clothing</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Dresses</a></li>
+                                                                    <li><a href="#">Tops & Tees</a></li>
+                                                                    <li><a href="#">Jackets & Coats</a></li>
+                                                                    <li><a href="#">Pants & Capris</a></li>
+                                                                    <li><a href="#">Sweaters</a></li>
+                                                                    <li><a href="#">Costumes</a></li>
+                                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                                    <li><a href="#">Pajamas & Robes</a></li>
+                                                                    <li><a href="#">Shorts</a></li>
+                                                                    <li><a href="#">Swimwear</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-col">
+                                                            <div class="row">
+                                                                <h4>Jewelry</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Accessories</a></li>
+                                                                    <li><a href="#">Bags & Purses</a></li>
+                                                                    <li><a href="#">Necklaces</a></li>
+                                                                    <li><a href="#">Rings</a></li>
+                                                                    <li><a href="#">Earrings</a></li>
+                                                                    <li><a href="#">Bracelets</a></li>
+                                                                    <li><a href="#">Body Jewelry</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-col">
+                                                            <div class="row">
+                                                                <h4>Beauty</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Bath Accessories</a></li>
+                                                                    <li><a href="#">Makeup & Cosmetics</a></li>
+                                                                    <li><a href="#">Skin Care</a></li>
+                                                                    <li><a href="#">Hair Care</a></li>
+                                                                    <li><a href="#">Essential Oils</a></li>
+                                                                    <li><a href="#">Fragrances</a></li>
+                                                                    <li><a href="#">Soaps & Bath Bombs</a></li>
+                                                                    <li><a href="#">Face Masks & Coverings</a></li>
+                                                                    <li><a href="#">Spa Kits & Gifts</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-col">
+                                                            <div class="row">
+                                                                <h4>Top brands</h4>
+                                                                <ul class="women-brands">
+                                                                    <li><a href="#">Nike</a></li>                                                                  
+                                                                    <li><a href="#">Louis Vuitton</a></li>                                                                  
+                                                                    <li><a href="#">Hermes</a></li>                                                                  
+                                                                    <li><a href="#">Gucci</a></li>                                                                  
+                                                                    <li><a href="#">Zalando</a></li>                                                                  
+                                                                    <li><a href="#">Tiffany & Co.</a></li>                                                                  
+                                                                    <li><a href="#">Zara</a></li>                                                                  
+                                                                    <li><a href="#">H&M</a></li>                                                                  
+                                                                    <li><a href="#">Cartier</a></li>                                                                  
+                                                                    <li><a href="#">Chanel</a></li>                                                                  
+                                                                    <li><a href="#">Hurley</a></li>                                                                  
+                                                                </ul>
+                                                                <a href="#" class="view-all">View all brands<i class="ri-arrow-right-line"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-col products">
+                                                            <div class="row">
+                                                                <div class="media">
+                                                                    <a href="#" class="thumbnail object-cover">
+                                                                        <img src="./assets/products/apparel4.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="text-content">
+                                                                    <h4>Most wanted!</h4>
+                                                                    <a href="#" class="primary-button">Order Now</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Man</a></li>
+                                        <li><a href="#">Sports
+                                            <div class="fly-item"><span>New!</span></div>
+                                        </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="right">
+                                <ul class="d-flex second-links">
+                                    <li class="mobile-hide"><a href="#">
+                                            <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                            <div class="fly-item"><span class="item-number">0</span></div>
+                                    </a></li>
+                                    <li>
+                                        <a href="#" class="iscart">
+                                            <div class="icon-large">
+                                                <i class="ri-shopping-cart-line"></i>
+                                                <div class="fly-item"><span class="item-number">0</span></div>
+                                            </div>
+                                            <div class="icon-text">
+                                                <div class="mini-text">Total</div>
+                                                <div class="cart-total">$ 0.00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Nav -->
+                <div class="header-main mobile-hide">
+                    <div class="container">
+                        <div class="d-flex wrapper">
+                            <div class="left">
+                                <div class="dpt-cat">
+                                    <div class="dpt-head">
+                                        <div class="main-text">All Department</div>
+                                        <div class="mini-text mobile-hide">Total Products</div>
+                                        <a href="#0" class="dpt-trigger mobile-hide">
+                                            <i id="dpt-show" class="ri-menu-3-line ri-xl"></i>
+                                            <i id="dpt-close" class="ri-close-line ri-xl"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dpt-menu">
+                                        <ul class="second-links">
+                                            <li class="has-child beauty">
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-bear-smile-line"></i></span>
+                                                    Beauty
+                                                    <span class="icon-small"><i class="ri-arrow-right-s-line"></i></span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Makeup</a></li>
+                                                    <li><a href="#">Skin Care</a></li>
+                                                    <li><a href="#">Hair Care</a></li>
+                                                    <li><a href="#">Fragrance</a></li>
+                                                    <li><a href="#">Foot & Hand Care</a></li>
+                                                    <li><a href="#">Tools & Accessories</a></li>
+                                                    <li><a href="#">Shave & Hair Removal</a></li>
+                                                    <li><a href="#">Personal Care</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child electric">
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-bluetooth-connect-line"></i>  </span>
+                                                    Electric
+                                                    <span class="icon-small"><i class="ri-arrow-right-s-line"></i></span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Camera</a></li>
+                                                    <li><a href="#">Cell Phones</a></li>
+                                                    <li><a href="#">Computers</a></li>
+                                                    <li><a href="#">GPS & Navigation</a></li>
+                                                    <li><a href="#">Headphones</a></li>
+                                                    <li><a href="#">Home Audio</a></li>
+                                                    <li><a href="#">Television</a></li>
+                                                    <li><a href="#">Video Projectors</a></li>
+                                                    <li><a href="#">Wearble Technology</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-child fashion">
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-t-shirt-air-line"></i></span>
+                                                    Women's Fashion
+                                                    <span class="icon-small"><i class="ri-arrow-right-s-line"></i></span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="#">Clothing</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Jewelry</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Handbags</a></li>
+                                                    <li><a href="#">Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-shirt-line"></i></span>
+                                                    Men's Fashion                          
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-user-5-line"></i></span>
+                                                    Girl's Fashion                          
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-user-6-line"></i></span>
+                                                    Boy's Fashion                          
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-heart-pulse-fill"></i></span>
+                                                    Health & Household                          
+                                                </a>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-home-8-line"></i></span>
+                                                    Home & Kitchen
+                                                    <span class="icon-small"><i class="ri-arrow-right-s-line"></i></span>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flex-col">
+                                                        <div class="row">
+                                                            <h4><a href="#">Kitchen & Dining</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Kitchen</a></li>
+                                                                <li><a href="#">Dining Room</a></li>
+                                                                <li><a href="#">Pantry</a></li>
+                                                                <li><a href="#">Great Room</a></li>
+                                                                <li><a href="#">Breakfast Nook</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Living</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Living Room</a></li>
+                                                                <li><a href="#">Family Room</a></li>
+                                                                <li><a href="#">Sunroom</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-col">
+                                                        <div class="row">
+                                                            <h4><a href="#">Bed & Bath</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Bathroom</a></li>
+                                                                <li><a href="#">Powder Room</a></li>
+                                                                <li><a href="#">Bedroom</a></li>
+                                                                <li><a href="#">Storage & Closet</a></li>
+                                                                <li><a href="#">Baby & Kids</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Utility</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Laundry</a></li>
+                                                                <li><a href="#">Garage</a></li>
+                                                                <li><a href="#">Mudroom</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-col">
+                                                        <div class="row">
+                                                            <h4><a href="#">Outdoor</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Landscape</a></li>
+                                                                <li><a href="#">Patio</a></li>
+                                                                <li><a href="#">Deck</a></li>
+                                                                <li><a href="#">Pool</a></li>
+                                                                <li><a href="#">Backyard</a></li>
+                                                                <li><a href="#">Porch</a></li>
+                                                                <li><a href="#">Exterior</a></li>
+                                                                <li><a href="#">Outdoor Kitchen</a></li>
+                                                                <li><a href="#">Front Yard</a></li>
+                                                                <li><a href="#">Driveway</a></li>
+                                                                <li><a href="#">Poolhouse</a></li>
+                                                            </ul>
+                                                        </div>                                                       
+                                                    </div>
+                                                </div>       
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-mickey-fill"></i></span>
+                                                    Pet Supplies                         
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-basketball-line"></i></span>
+                                                    Sports                        
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon-large"><i class="ri-shield-star-fill"></i></span>
+                                                    Best Seller
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="search-box">
+                                    <form action="" class="search">
+                                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                                        <input type="text" placeholder="Search for products">
+                                        <input type="submit" value="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Main -->
+            </header>
+            <!-- Main -->
+            <main>
+                <div class="single-category">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="col">
+                                <div class="holder">
+                                    <div class="row sidebar">
+                                        <div class="filter">
+                                            <div class="filter-block">
+                                                <h4>Category</h4>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="bags">
+                                                        <label for="bags">
+                                                            <span class="checked"></span>
+                                                            <span>Bags</span>
+                                                        </label>
+                                                        <span class="count">15</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="beauty">
+                                                        <label for="beauty">
+                                                            <span class="checked"></span>
+                                                            <span>Beauty</span>
+                                                        </label>
+                                                        <span class="count">12</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="clothing">
+                                                        <label for="clothing">
+                                                            <span class="checked"></span>
+                                                            <span>Clothing</span>
+                                                        </label>
+                                                        <span class="count">5</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="jewelry">
+                                                        <label for="jewelry">
+                                                            <span class="checked"></span>
+                                                            <span>Jewelry</span>
+                                                        </label>
+                                                        <span class="count">8</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="shoes">
+                                                        <label for="shoes">
+                                                            <span class="checked"></span>
+                                                            <span>Shoes</span>
+                                                        </label>
+                                                        <span class="count">10</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter-block">
+                                                <h4>Activity</h4>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="athletic">
+                                                        <label for="athletic">
+                                                            <span class="checked"></span>
+                                                            <span>Athletic</span>
+                                                        </label>
+                                                        <span class="count">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="lounge">
+                                                        <label for="lounge">
+                                                            <span class="checked"></span>
+                                                            <span>Lounge</span>
+                                                        </label>
+                                                        <span class="count">12</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="outdoor">
+                                                        <label for="outdoor">
+                                                            <span class="checked"></span>
+                                                            <span>Outdoor</span>
+                                                        </label>
+                                                        <span class="count">5</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="travel">
+                                                        <label for="travel">
+                                                            <span class="checked"></span>
+                                                            <span>Travel</span>
+                                                        </label>
+                                                        <span class="count">8</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="urban">
+                                                        <label for="urban">
+                                                            <span class="checked"></span>
+                                                            <span>Urban</span>
+                                                        </label>
+                                                        <span class="count">10</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter-block">
+                                                <h4>Brands</h4>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="nike">
+                                                        <label for="nike">
+                                                            <span class="checked"></span>
+                                                            <span>Nike</span>
+                                                        </label>
+                                                        <span class="count">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="louis-vuitton">
+                                                        <label for="louis-vuitton">
+                                                            <span class="checked"></span>
+                                                            <span>Louis Vuitton</span>
+                                                        </label>
+                                                        <span class="count">12</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="hermes">
+                                                        <label for="hermes">
+                                                            <span class="checked"></span>
+                                                            <span>Hermes</span>
+                                                        </label>
+                                                        <span class="count">5</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="gucci">
+                                                        <label for="gucci">
+                                                            <span class="checked"></span>
+                                                            <span>Gucci</span>
+                                                        </label>
+                                                        <span class="count">8</span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="checkbox" id="zara">
+                                                        <label for="zara">
+                                                            <span class="checked"></span>
+                                                            <span>Zara</span>
+                                                        </label>
+                                                        <span class="count">10</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter-block products">
+                                                <h4>Color</h4>
+                                                <ul class="bycolor variant d-flex">
+                                                    <li>
+                                                        <input type="radio" name="color" id="cogrey">
+                                                        <label for="cogrey" class="circle"></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="color" id="coblue">
+                                                        <label for="coblue" class="circle"></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="color" id="cogreen">
+                                                        <label for="cogreen" class="circle"></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="color" id="cored">
+                                                        <label for="cored" class="circle"></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="color" id="colight">
+                                                        <label for="colight" class="circle"></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filter-block pricing">
+                                                <h4>Price</h4>
+                                                <div class="byprice">
+                                                    <div class="progress"></div>
+                                                    <div class="range-track">
+                                                        <input type="range" min="0" max="10000" value="0" step="100" class="range-min">
+                                                        <input type="range" min="0" max="10000" value="10000" step="100" class="range-max">
+                                                    </div>
+                                                </div>
+                                                <div class="price-range">
+                                                    <span class="price-form">0</span>
+                                                    <span class="price-to">10000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section">
+                                        <div class="row">
+                                            <div class="cat-head">
+                                                <div class="breadcrumb">
+                                                    <ul class="d-flex">
+                                                        <li><a href="#">Home</a></li>
+                                                        <li>Women</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="page-title">
+                                                    <h1>Women</h1>
+                                                </div>
+                                                <div class="cat-description">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure voluptas aliquid voluptatem eius maxime fugiat aperiam id? Inventore repellendus quisquam quaerat laboriosam soluta ut.</p>
+                                                </div>
+                                                <div class="cat-navigation d-flex">
+                                                    <div class="item-filter desktop-hide">
+                                                        <a href="#0" class="filter-trigger label">
+                                                            <i class="ri-menu-2-line ri-2x"></i>
+                                                            <span>Filter</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-sortir">
+                                                        <div class="label">
+                                                            <span class="mobile-hide">Sort by default</span>
+                                                            <div class="desktop-hide">Default</div>
+                                                            <i class="ri-arrow-down-s-line"></i>
+                                                        </div>
+                                                        <ul>
+                                                            <li>Default</li>
+                                                            <li>Product Name</li>
+                                                            <li>Price</li>
+                                                            <li>Brand</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="item-perpage mobile-hide">
+                                                        <div class="label">Item 10 per page</div>
+                                                        <div class="desktop-hide">10</div>
+                                                    </div>
+                                                    <div class="item-option">
+                                                        <div class="label">
+                                                            <span class="mobile-hide">Show 10 per page</span>
+                                                            <div class="desktop-hide">10</div>
+                                                            <i class="ri-arrow-down-s-line"></i>
+                                                        </div>
+                                                        <ul>
+                                                            <li>10</li>
+                                                            <li>20</li>
+                                                            <li>30</li>
+                                                            <li>All</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products flexwrap main">
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel3.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel4.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel2.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel3.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel3.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel4.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel2.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="media">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="./assets/products/apparel3.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="hoverable">
+                                                        <ul>
+                                                            <li class="active"><a href="#" class="c-flex"><i class="ri-heart-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-eye-line"></i></a></li>
+                                                            <li><a href="#" class="c-flex"><i class="ri-shuffle-line"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="discount circle c-flex"><span>25%</span></div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="rating">
+                                                        <div class="stars"></div>
+                                                        <span class="mini-text">(2,548)</span>
+                                                    </div>
+                                                    <h3 class="main-links"><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                                    <div class="price">
+                                                        <span class="current">$129.99</span>
+                                                        <span class="normal mini-text">$129.99</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="loadmore c-flex">
+                                            <div class="secondary-button">Load more</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banners -->
+                <div class="banners">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="col">
+                                <!-- Banner -->
+                                <div class="banner flexwrap">
+                                    <div class="row">
+                                        <div class="item">
+                                            <div class="image">
+                                                <img src="./assets/banner/banner1.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flex-col">
+                                                <h4>Brutal Sale</h4>
+                                                <h3><span>Get the deal in here</span><br>Living Room Chair</h3>
+                                                <a href="#" class="primary-button">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="item get-gray">
+                                            <div class="image">
+                                                <img src="./assets/banner/banner2.jpg" alt="">
+                                            </div>
+                                            <div class="text-content flex-col">
+                                                <h4>Brutal Sale</h4>
+                                                <h3><span>Get the deal in here</span><br>Living Room Chair</h3>
+                                                <a href="#" class="primary-button">Show Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Categories -->
+                                <div class="categories flexwrap">
+                                    <div class="row">
+                                        <div class="item">
+                                            <div class="image">
+                                                <img src="./assets/banner/procat1.jpg" alt="">
+                                            </div>
+                                            <div class="content mini-links">
+                                                <h4>Beauty</h4>
+                                                <ul class="flex-col">
+                                                    <li><a href="#">Makeup</a></li>
+                                                    <li><a href="#">Skin Care</a></li>
+                                                    <li><a href="#">Hair Care</a></li>
+                                                    <li><a href="#">Fragrance</a></li>
+                                                    <li><a href="#">Foot & Hand Care</a></li>
+                                                </ul>
+                                                <div class="second-links">
+                                                    <a href="#" class="view-all">View All <i class="ri-arrow-right-line"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="item">
+                                            <div class="image">
+                                                <img src="./assets/banner/procat2.jpg" alt="">
+                                            </div>
+                                            <div class="content mini-links">
+                                                <h4>Gatdets</h4>
+                                                <ul class="flex-col">
+                                                    <li><a href="#">Camere</a></li>
+                                                    <li><a href="#">Cell Phones</a></li>
+                                                    <li><a href="#"> Computers</a></li>
+                                                    <li><a href="#">GPS & Navigation</a></li>
+                                                    <li><a href="#">Headphones</a></li>
+                                                </ul>
+                                                <div class="second-links">
+                                                    <a href="#" class="view-all">View All <i class="ri-arrow-right-line"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="item">
+                                            <div class="image">
+                                                <img src="./assets/banner/procat3.jpg" alt="">
+                                            </div>
+                                            <div class="content mini-links">
+                                                <h4>Home Decor</h4>
+                                                <ul class="flex-col">
+                                                    <li><a href="#">Kitchen</a></li>
+                                                    <li><a href="#">Dining Room</a></li>
+                                                    <li><a href="#">Pantry</a></li>
+                                                    <li><a href="#">Great Room</a></li>
+                                                    <li><a href="#">Breakfast Nook</a></li>
+                                                </ul>
+                                                <div class="second-links">
+                                                    <a href="#" class="view-all">View All <i class="ri-arrow-right-line"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer>
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="box">
+                                <div class="content">
+                                    <h3>Join Our Newsletter</h3>
+                                    <p>Get E-mail updates about our latest shop and <strong>special offers</strong></p>
+                                </div>
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                    <input type="mail" placeholder="Your email address" required>
+                                    <input type="submit" value="Sign Up">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Widgets -->
+                <div class="widgets">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="flexwrap">
+                                <div class="row">
+                                    <div class="item mini-links">
+                                        <h4>Help & Contact</h4>
+                                        <ul class="flex-col">
+                                            <li><a href="#">Your Account</a></li>
+                                            <li><a href="#">Your Orders</a></li>
+                                            <li><a href="#">Shipping Rates</a></li>
+                                            <li><a href="#">Returns</a></li>
+                                            <li><a href="#">Assistant</a></li>
+                                            <li><a href="#">Help</a></li>
+                                            <li><a href="#">Contact updates</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item mini-links">
+                                        <h4>Product Categories</h4>
+                                        <ul class="flex-col">
+                                            <li><a href="#">Beauty</a></li>
+                                            <li><a href="#">Electronic</a></li>
+                                            <li><a href="#">Women's Fashion</a></li>
+                                            <li><a href="#">Men's Fashion</a></li>
+                                            <li><a href="#">Girl's Fashion</a></li>
+                                            <li><a href="#">Boy's Fashion</a></li>
+                                            <li><a href="#">Health & Household</a></li>
+                                            <li><a href="#">Home & Kitchen</a></li>
+                                            <li><a href="#">Pet Supplies</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item mini-links">
+                                        <h4>Payment Info</h4>
+                                        <ul class="flex-col">
+                                            <li><a href="#">Bussiness Card</a></li>
+                                            <li><a href="#">Shop with Points</a></li>
+                                            <li><a href="#">Reload Your Balance</a></li>
+                                            <li><a href="#">Paypal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item mini-links">
+                                        <h4>About Us</h4>
+                                        <ul class="flex-col">
+                                            <li><a href="#">Company Info</a></li>
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">Investors</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Policies</a></li>
+                                            <li><a href="#">Customer Reviews</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Info -->
+                <div class="footer-info">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="flex-col">
+                                <div class="logo"><a href="#"><span class="circle"></span>.Store</a></div>
+                                <div class="socials">
+                                    <ul class="d-flex">
+                                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="mini-text">Coryright 2023 dotWebdesign. All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Menu bottom -->
+            <div class="menu-bottom desktop-hide">
+                <div class="container">
+                    <div class="wrapper">
+                        <nav>
+                            <ul>
+                                <li><a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Trending</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Account</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Wishlist</span>
+                                </a></li>
+                                <li><a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Search</span>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Search bottom -->
+            <div class="search-bottom desktop-hide">
+                <div class="container">
+                    <div class="wrapper">
+                        <form action="post" class="search">
+                            <a href="#" class="t-close search-close c-flex"><i class="ri-close-line"></i></a>
+                            <span class="icon-large"><i class="ri-search-line"></i></span>
+                            <input type="text">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Libary JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.js"></script>
+        <script src="./js/slider.js"></script>
+        <!-- Main JS -->
+        <script src="./js/script.js"></script>
+        <script>
+            // Filter model
+            const Fpopup = document.querySelector('.filter')
+            const Ftrigger = document.querySelector('.filter-trigger')
+            Ftrigger.addEventListener('click',()=>{
+                setTimeout(()=>{
+                    if(!Fpopup.classList.contains("show")){
+                        Fpopup.classList.add('show')
+                    }
+                }, 300)
+            })
+            document.addEventListener('click',(e)=>{
+                const isClose = e.target.closest('.filter')
+                if(!isClose && Fpopup.classList.contains('show')){
+                    Fpopup.classList.remove('show')
+                }
+            })
+            
+        </script>
+    </body>
+</html>
